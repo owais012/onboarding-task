@@ -8,6 +8,7 @@ import TopGradientBackground from '../../assets/TopGradient.svg';
 import BottomGradientBackground from '../../assets/BottomGradient.svg';
 import { CallOutlined, VisibilityOffOutlined, VisibilityOutlined, EmailOutlined, PersonOutline, Image } from '@mui/icons-material';
 import { BottomBgImage, Container, ContentBox, DividerWithText, FormContainer, InnerContainer, LoginLink, SignUpContainer, SmallText, SocialContainer, TopBgImage } from './Auth.styles.jsx'
+import SignUpSvg from '../../assets/Sign up-bro.svg'
 
 const SignUp = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -16,7 +17,9 @@ const SignUp = () => {
     return (
         <Container>
             <InnerContainer>
-                <ContentBox></ContentBox>
+                <ContentBox>
+                    <img src={SignUpSvg} />
+                </ContentBox>
                 <ContentBox>
                     <TopBgImage>
                         <img src={TopGradientBackground} />

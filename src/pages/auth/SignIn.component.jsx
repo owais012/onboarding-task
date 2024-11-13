@@ -3,11 +3,12 @@ import { TextField, Button, Typography, IconButton, InputAdornment } from '@mui/
 import AppleIcon from '../../assets/AppleIcon.svg';
 import FacebookIcon from '../../assets/FacebookIcon.svg';
 import GoogleIcon from '../../assets/GoogleIcon.svg';
+import LoginSvg from '../../assets/Login-pana.svg';
 import LockIcon from '@mui/icons-material/Lock';
 import TopGradientBackground from '../../assets/TopGradient.svg';
 import BottomGradientBackground from '../../assets/BottomGradient.svg';
 import { CallOutlined, VisibilityOffOutlined, VisibilityOutlined, EmailOutlined, PersonOutline, Image } from '@mui/icons-material';
-import { BottomBgImage, Container, ContentBox, DividerWithText, FormContainer, InnerContainer, LoginLink, SignUpContainer, SmallText, SocialContainer, TopBgImage } from './Auth.styles.jsx'
+import { BottomBgImage, Container, ContentBox, DividerWithText, FormContainer, InnerContainer, LoginLink, SignUpContainer, SmallText, SocialContainer, TopBgImage } from './Auth.styles.jsx';
 
 const SignIN = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -16,7 +17,9 @@ const SignIN = () => {
     return (
         <Container>
             <InnerContainer>
-                <ContentBox></ContentBox>
+                <ContentBox>
+                    <img src={LoginSvg} />
+                </ContentBox>
                 <ContentBox>
                     <TopBgImage>
                         <img src={TopGradientBackground} />

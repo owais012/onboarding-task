@@ -62,13 +62,17 @@ export const ContentBox = styled.div`
   justify-content: center;
   font-size: 1.5rem;
   font-weight: bold;
+  width: 100%;
   &:nth-child(1) {
     display: none;
     @media (min-width: 600px) {
         display: flex;
-        background: linear-gradient(to bottom, #87cefa 0%, #6a5acd 100%);
+        // background: linear-gradient(to bottom, #87cefa 0%, #6a5acd 100%);
     }
   }
+    img {
+      width: 100%;
+    }
 `;
 
 export const DividerWithText = styled.div`
